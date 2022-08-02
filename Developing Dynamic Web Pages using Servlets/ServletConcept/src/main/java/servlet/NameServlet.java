@@ -24,6 +24,12 @@ public class NameServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//doGet(request, response);
         String fname = request.getParameter("fname");
         String lname = request.getParameter("lname");
         
@@ -32,12 +38,6 @@ public class NameServlet extends HttpServlet {
     out.println("Your full name is " + fname + " " + lname);
     out.println("</body></html>");
 
-	}
-
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
 	}
 
 }
