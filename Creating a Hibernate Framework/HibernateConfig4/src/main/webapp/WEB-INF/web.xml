@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>HibernateUtil</servlet-name>
+  	<display-name>HibernateUtil</display-name>
+  	<description></description>
+  	<servlet-class>com.ecommerce.HibernateUtil</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>HibernateConfig</servlet-name>
+  	<display-name>HibernateConfig</display-name>
+  	<description></description>
+  	<servlet-class>HibernateConfig</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InitHibernate</servlet-name>
+  	<display-name>InitHibernate</display-name>
+  	<description></description>
+  	<servlet-class>InitHibernate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HibernateUtil</servlet-name>
+  	<url-pattern>/HibernateUtil</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>HibernateConfig</servlet-name>
+  	<url-pattern>/HibernateConfig</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InitHibernate</servlet-name>
+  	<url-pattern>/InitHibernate</url-pattern>
+  </servlet-mapping>
+</web-app>
