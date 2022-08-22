@@ -27,7 +27,8 @@
 			<div class="row">
 				<div class="col">
 					<div class="form-group">
-						<label for="name">Name</label> <input type="text"
+						<label for="name">Name</label> 
+						<input type="text"
 							value="${employee.name }" class="form-control" id="name"
 							name="name" placeholder="Enter Name">
 					</div>

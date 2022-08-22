@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.demo.model.Employee;
 import com.demo.service.EmployeeServices;
+import com.mysql.cj.Session;
+import com.sun.net.httpserver.Request;
 
 @Controller
 @RequestMapping
@@ -61,5 +63,21 @@ public class EmployeeController {
 	public String deleteEmployee(@PathVariable long id) {
 		employeeServices.delete(id);
 		return "redirect:/employeeReport";
+	}
+	@GetMapping("searchEmployee")
+	public String searchEmployee() {
+		
+		return "SearchEmployee";
+	}
+	@GetMapping("/searchingEmployee")
+	public String searchingEmployee(@RequestParam("id")long id,Model m) {
+		Employee emp=employeeServices.listById(id);
+		if(emp==null) {
+			m.addAttribute("Message", "Data Not Found");
+			return "SearchResult";
+		}
+		m.addAttribute("employee", emp);
+		m.addAttribute("Message", "Fetched Result");
+		return "SearchResult";
 	}
 }
