@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>Feedback</title>
+  </head>
+  <body style=background-color:#91C483;><br><br>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header text-center">Registration Form</div>
+          <div class="card-body">
+            <form>
+              <div class="form-row align-items-center">
+                <div class="col-4">
+                  <label class="sr-only" for="inlineFormInput">Name</label>
+                  <input
+                    type="text"
+                    class="form-control mb-2"
+                    placeholder="Firstname Lastname"
+                  />
+                </div>
+                <div class="col-2">
+                  <label class="sr-only" for="inlineFormInputGroup"
+                    >Username</label
+                  >
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">@</div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inlineFormInputGroup"
+                      placeholder="Username"
+                    />
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label"
+                    >Email</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail3"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="autoSizingCheck"
+                    />
+                    <label class="form-check-label" for="autoSizingCheck">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+                <div class="col-auto">Gender</div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="gridRadios1"
+                    value="option1"
+                    checked
+                  />
+                  <label class="form-check-label" for="gridRadios1">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="gridRadios2">
+                    Female
+                  </label>
+                </div>
+                <div class="col-auto">Hobbies</div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="gridCheck1">
+                    Powerlifting
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="gridCheck2">
+                    Bug Bounty
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck3"
+                  />
+                  <label class="form-check-label" for="gridCheck3"> CTF </label>
+                </div>
+                <div class="col-auto">Enter any course</div>
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Show available</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Master in Pentesting</a></li>
+                      <li><a class="dropdown-item" href="#">Bash Scripting for noobs</a></li>
+                      <li><a class="dropdown-item" href="#">Bug bounty hunter</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Others</a></li>
+                    </ul>
+                  </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-2">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </body>
+</html>
