@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-angular-app';
+  products:Array<any>=[{name:"Rice",price:200},{
+    name:"Sugar",price:300
+  }];
 }

@@ -1,7 +1,7 @@
 <p>card works!</p>
-<input type="text" [(ngModel)]="uname">
-<input type="password" [(ngModel)]="pass">
-<button (click)="validate(uname,pass)">Login</button>
-{{msg}}
-<h1 [style.color]="status=='error'?'red':'green'">{{msg}}</h1>
-<div [className]="cssStringVar">{{msg}}</div>
+<li *ngFor ="let product of productList">
+
+    {{product.name}}
+    {{product.price}}
+    
+    </li> 
