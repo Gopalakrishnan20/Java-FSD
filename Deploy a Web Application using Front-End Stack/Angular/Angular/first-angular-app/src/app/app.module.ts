@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { FormsModule } from '@angular/forms';
 import { FormtemplateComponent } from './components/formtemplate/formtemplate.component';
+import { ServiceTestService } from './service-test.service';
+import { ProductsService } from './products.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { FormtemplateComponent } from './components/formtemplate/formtemplate.co
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServiceTestService, ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
